@@ -1,0 +1,62 @@
+header{
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    border-radius: 8px;
+    height: 50px;
+    align-content: center;
+    color: black;
+    text-decoration: none;
+}
+
+.bg-yelow {
+    background-color: yellow;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+main {
+    display: flex;
+}
+
+main>section {
+    flex: 1;
+    text-align: center;
+}
+
+.formula {
+    border: 1px solid;
+    height: 200px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-luas {
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtQj3damdUMrB7NGGoc1qp7hNlWdpC_GJxnkiaA9JpyXEbPzc24PEalidWP4du9LY7s1g51LweT-7lqlh83cXAf3fTHFTZrDkSlStPgey9bv8LvWrxvV1YnGNb3VRrOXcms6o6WVSmZv4/s1600/Rumus+Luas+Segitiga.png);
+}
+
+.img-keliling {
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjkoFOsn_QGh-kmuBf0UxLzdqH8LUjDQMLILJZ8Ec5xVerp1faXAfbTvkie5CD8MqIlfBsG0kalPCaSJ0p5Cu7Aey5TholhhFSWhY-Ctd5YqjgABOKAsvuISdGDq-pDHAZ8EGS8YcnsvM/s400/Rumus+Keliling+Segitiga.png);
+}
+
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+.footer {
+  text-align: center;
+  font-size: 10px;
+  color: #444;
+}
