@@ -1,3 +1,7 @@
+body{
+    font-family: math;
+}
+
 header{
     text-align: center;
 }
@@ -25,6 +29,7 @@ nav a {
 
 main {
     display: flex;
+    gap: 32px;
 }
 
 main>section {
@@ -48,11 +53,22 @@ main>section {
     background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjkoFOsn_QGh-kmuBf0UxLzdqH8LUjDQMLILJZ8Ec5xVerp1faXAfbTvkie5CD8MqIlfBsG0kalPCaSJ0p5Cu7Aey5TholhhFSWhY-Ctd5YqjgABOKAsvuISdGDq-pDHAZ8EGS8YcnsvM/s400/Rumus+Keliling+Segitiga.png);
 }
 
-input[type=number], select {
+/* font style */
+input[type=number] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: aqua;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
 }
 
 .footer {
