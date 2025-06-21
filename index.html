@@ -12,20 +12,16 @@
 
 <body>
     <!-- head content -->
-    <header class="header">
-        <h1>Welcome to junggel</h1>
+    <header class="main-header">
+        <h1>Kalkulator Bangun Datar & Bangun Ruang</h1>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus turpis non nibh tincidunt fermentum. 
-            Duis erat metus, consectetur vel sagittis at, porttitor nec justo. Ut ultrices semper fringilla. 
-            Integer laoreet nec orci id consectetur. Integer tincidunt euismod sollicitudin. 
-            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-            Sed consectetur tincidunt justo at ullamcorper. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-            Maecenas in hendrerit arcu, ac consequat eros. Cras et pellentesque metus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus turpis non nibh tincidunt fermentum.</p>
         
         <!-- Navigation -->
         <nav>
-            <a class="bg-yelow" href="">Segitiga</a>
-            <a class="bg-blue" href="">Jajar Genjang</a>
+            <button class="bg-home" onclick="goHome()">Home</button>
+            <button class="bg-home" onclick="showSection('luasSegitiga', 'keliling-segitiga')">Segitiga</button>
+            <button class="bg-home" onclick="showSection('luas-jajar-genjang', 'keliling-jajar-genjang')">Jajar Genjang</button>
         </nav>
     </header>
 
@@ -33,73 +29,167 @@
          <main>
 
             <!-- Luas Segitiga -->
-            <section>
+            <section id="luasSegitiga" class="calculator-section">
                 <header>
                     <h2> Luas Segitiga</h2>
                 </header>
 
                 <!-- Konten Luas -->
-                 <div class="formula img-luas"></div>
+                 <div class="formula img-luas-segitiga"></div>
                 
-                 <p>Rumus Luas Segitiga Adalah : 
+                 <p>Rumus Luas Segitiga Adalah :
                     ½ * Alas * tinggi</p>
                  <!-- Form Luas -->
-                  <form>
+                  <form id="luasSegitiga">
                     <header>
                         <h2>Form Luas Segitiga</h2>
                     </header>
 
                     <div>
-                        <label for="alas">Alas :</label>
-                        <input type="number" id="alas" placeholder="Masukan Alas Segitiga">
+                        <label for="alas-segitiga">Alas :</label>
+                        <input type="number" id="alas-segitiga" placeholder="Masukan Alas Segitiga" required>
                     </div>
 
                     <div>
-                        <label for="tinggi">Tinggi :</label>
-                        <input type="number" id="tinggi" placeholder="Masukan Tinggi Segitiga">
+                        <label for="tinggi-segitiga">Tinggi :</label>
+                        <input type="number" id="tinggi-segitiga" placeholder="Masukan Tinggi Segitiga" required>
                     </div>
 
                     <div>
-                        <button>Submit</button>
+                        <label for="hasil-luas-segitiga">Luas Segitiga:</label>
+                        <div class="result" id="hasil-luas-segitiga"></div>
                     </div>
 
+                    <div>
+                        <button type="submit">Hitung Luas</button>
+                    </div>
+        
                   </form>
             </section>
 
             <!-- Keliling Segitiga -->
-             <section>
+             <section id="keliling-segitiga" class="calculator-section">
                 <header>
                     <h2>Keliling Segitiga</h2>
                 </header>
 
                 <!-- Konten keliling Segitiga -->
-                 <div class="formula img-keliling"></div>
+                 <div class="formula img-keliling-segitiga"></div>
                 
                  <p>Keliling segitiga = a + b + c</p>
                  <!-- Form keliling Segitiga -->
-                  <form>
+                  <form id="keliling-segitiga">
                     <header>
                         <h2>Form Keliling Segitiga</h2>
                     </header>
 
                     <div>
-                        <label for="sisi-a">Sisi A :</label>
-                        <input type="number" id="sisi-a" placeholder="Masukan Sisi A">
+                        <label for="sisiA">Sisi A :</label>
+                        <input type="number" id="sisiA" placeholder="Masukan Sisi A" required>
                     </div>
 
                     <div>
-                        <label for="sisi-b">Sisi B :</label>
-                        <input type="number" id="sisi-a" placeholder="Masukan Sisi B">
+                        <label for="sisiB">Sisi B :</label>
+                        <input type="number" id="sisiB" placeholder="Masukan Sisi B" required>
                     </div>
 
                     <div>
-                        <label for="sisi-c">Sisi C :</label>
-                        <input type="number" id="sisi-c" placeholder="Masukan Sisi C">
+                        <label for="sisiC">Sisi C :</label>
+                        <input type="number" id="sisiC" placeholder="Masukan Sisi C" required>
                     </div>
 
                     <div>
-                        <button>Submit</button>
+                        <label for="hasil-keliling-segitiga">Keliling Segitiga:</label>
+                        <div class="result" id="hasil-keliling-segitiga"></div>
                     </div>
+
+                    <div>
+                        <button type="submit">Hitung Keliling</button>
+                    </div>
+
+                  </form>
+             </section>
+
+         </main>
+
+         <!-- main content -->
+         <main>
+            <!-- Luas Jajar Genjang -->
+            <section id="luas-jajar-genjang" class="calculator-section">
+                <header>
+                    <h2>Luas Jajar Genjang</h2>
+                </header>
+
+                <!-- Konten Luas -->
+                 <div class="formula img-luas-jajargenjang"></div>
+                
+                 <p>Rumus Luas Jajar Genjang Adalah :
+                     Alas * tinggi</p>
+                 <!-- Form Luas -->
+                  <form id="luas-jajar-genjang">
+                    <header>
+                        <h2>Form Luas Jajar Genjang</h2>
+                    </header>
+
+                    <div>
+                        <label for="alasJajarGenjang">Alas :</label>
+                        <input type="number" id="alasJajarGenjang" placeholder="Masukan Alas Jajar Genjang" required>
+                    </div>
+
+                    <div>
+                        <label for="tinggiJajarGenjang">Tinggi :</label>
+                        <input type="number" id="tinggiJajarGenjang" placeholder="Masukan Tinggi Jajar Genjang" required>
+                    </div>
+
+                    <div>
+                        <label for="luasJajarGenjang">Luas jajar Genjang:</label>
+                        <div class="result" id="luasJajarGenjang"></div>
+                    </div>
+
+                    <div>
+                        <button type="submit">Hitung Luas</button>
+                    </div>
+        
+                  </form>
+            </section>
+
+            <!-- Keliling Segitiga -->
+             <section id="keliling-jajar-genjang" class="calculator-section">
+                <header>
+                    <h2>Keliling Jajar Genjang</h2>
+                </header>
+
+                <!-- Konten keliling Segitiga -->
+                 <div class="formula img-keliling-jajargenjang"></div>
+                
+                 <p>Keliling Jajar Genjang = 2 * (a + b)</p>
+                 <p>a = panjang sisi sejajar</p>
+                 <p>b = panjang sisi lainnya</p>
+                 <!-- Form keliling Segitiga -->
+                  <form id="keliling-jajar-genjang">
+                    <header>
+                        <h2>Form Keliling Jajar Genjang</h2>
+                    </header>
+
+                    <div>
+                        <label for="sisi1">Sisi A :</label>
+                        <input type="number" id="sisi1" placeholder="Masukan Sisi A" required>
+                    </div>
+
+                    <div>
+                        <label for="sisi2">Sisi B :</label>
+                        <input type="number" id="sisi2" placeholder="Masukan Sisi B" required>
+                    </div>
+
+                    <div>
+                        <label for="keliling-jajarGenjang">Keliling Jajar Genjang :</label>
+                        <div class="result" id="keliling-jajarGenjang"></div>
+                    </div>
+
+                    <div>
+                        <button type="submit">Hitung Keliling</button>
+                    </div>
+
                   </form>
              </section>
 
@@ -109,6 +199,10 @@
     <footer class="footer">
         &copy; 2025 Kalkulator Sederhana | Created by Ersan Noprian
     </footer>
+
+    <!-- External Java Script -->
+
+<script src="js/script.js"></script>
 </body>
 
 </html>
