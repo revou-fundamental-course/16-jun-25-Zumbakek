@@ -13,6 +13,18 @@ function showSection(...sections) {
     });
 }
 
+// Fungsi Hapus
+function clearDisplay() {
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+        form.reset();
+        const resultDiv = form.querySelector('.result');
+        if (resultDiv) {
+            resultDiv.innerHTML = '';
+        }
+    });
+}
+
 // Segitiga
 document.getElementById('luasSegitiga').addEventListener('submit', function(event) {
     event.preventDefault(); 
