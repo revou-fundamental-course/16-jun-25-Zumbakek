@@ -15,13 +15,15 @@
     <header class="main-header">
         <h1>Kalkulator Bangun Datar & Bangun Ruang</h1>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus turpis non nibh tincidunt fermentum.</p>
+        <p> Platform ini menyediakan kalkulator perhitungan bangun datar dan bangun ruang yang dapat diakses kapan saja. 
+            Sangat bermanfaat untuk mendukung proses pembelajaran maupun kebutuhan perhitungan sehari-hari yang praktis dan efisien.</p>
         
         <!-- Navigation -->
         <nav>
             <button class="bg-home" onclick="goHome()">Home</button>
             <button class="bg-home" onclick="showSection('luasSegitiga', 'keliling-segitiga')">Segitiga</button>
             <button class="bg-home" onclick="showSection('luas-jajar-genjang', 'keliling-jajar-genjang')">Jajar Genjang</button>
+            <button class="bg-home" onclick="showSection('luas-persegi-panjang', 'keliling-persegi-panjang')">Persegi Panjang</button>
         </nav>
     </header>
 
@@ -153,13 +155,13 @@
                   </form>
             </section>
 
-            <!-- Keliling Segitiga -->
+            <!-- Keliling Jajar Genjang -->
              <section id="keliling-jajar-genjang" class="calculator-section">
                 <header>
                     <h2>Keliling Jajar Genjang</h2>
                 </header>
 
-                <!-- Konten keliling Segitiga -->
+                <!-- Konten keliling Jajar Genjang -->
                  <div class="formula img-keliling-jajargenjang"></div>
                 
                  <p>Keliling Jajar Genjang = 2 * (a + b)</p>
@@ -184,6 +186,89 @@
                     <div>
                         <label for="keliling-jajarGenjang">Keliling Jajar Genjang :</label>
                         <div class="result" id="keliling-jajarGenjang"></div>
+                    </div>
+
+                    <div>
+                        <button type="submit">Hitung Keliling</button>
+                    </div>
+
+                  </form>
+             </section>
+
+         </main>
+
+         <!-- main content -->
+         <main>
+            <!-- Luas Persegi Panjang -->
+            <section id="luas-persegi-panjang" class="calculator-section">
+                <header>
+                    <h2>Luas Persegi Panjang</h2>
+                </header>
+
+                <!-- Konten Luas -->
+                 <div class="formula img-luas-persegiPanjang"></div>
+                
+                 <p>Rumus Luas Persegi Panjang Adalah :
+                     Panjang * Lebar</p>
+                 <!-- Form Luas -->
+                  <form id="luas-persegi-panjang">
+                    <header>
+                        <h2>Form Luas Persegi Panjang</h2>
+                    </header>
+
+                    <div>
+                        <label for="panjang">Panjang :</label>
+                        <input type="number" id="panjang" placeholder="Masukan Panjang Persegi Panjang" required>
+                    </div>
+
+                    <div>
+                        <label for="lebar">Lebar :</label>
+                        <input type="number" id="lebar" placeholder="Masukan Lebar Persegi Panjang" required>
+                    </div>
+
+                    <div>
+                        <label for="luasPersegiPanjang">Luas Persegi Panjang :</label>
+                        <div class="result" id="luasPersegiPanjang"></div>
+                    </div>
+
+                    <div>
+                        <button type="submit">Hitung Luas</button>
+                    </div>
+        
+                  </form>
+            </section>
+
+            <!-- Keliling Jajar Genjang -->
+             <section id="keliling-persegi-panjang" class="calculator-section">
+                <header>
+                    <h2>Keliling Persegi Panjang</h2>
+                </header>
+
+                <!-- Konten keliling Jajar Genjang -->
+                 <div class="formula img-keliling-persegiPanjang"></div>
+                
+                 <p>Keliling Persegi Panjang = 2 * (p + l)</p>
+                 <p>p = panjang Peregi Panjang</p>
+                 <p>l = Lebar Persegi Panjang</p>
+                 <!-- Form keliling Segitiga -->
+                  <form id="keliling-persegi-panjang">
+                    <header>
+                        <h2>Form Keliling Persegi Panjang</h2>
+                    </header>
+
+                    <div>
+                        <label for="p">Panjang :</label>
+                        <input type="number" id="p" placeholder="Masukan Panjang" required>
+                    </div>
+
+                    <div>
+                        <label for="l">Lebar :</label>
+                        <input type="number" id="l" placeholder="Masukan Lebar" required>
+                    </div>
+
+                    <div>
+                        <label for="keliling-persegiPanjang">Keliling Persegi Panjang :</label>
+                        <div class="result" id="keliling-persegiPanjang"></div>
                     </div>
 
                     <div>

@@ -13,6 +13,7 @@ function showSection(...sections) {
     });
 }
 
+// Segitiga
 document.getElementById('luasSegitiga').addEventListener('submit', function(event) {
     event.preventDefault(); 
     const alas = parseFloat(document.getElementById('alas-segitiga').value);
@@ -30,6 +31,7 @@ document.getElementById('keliling-segitiga').addEventListener('submit', function
     document.getElementById('hasil-keliling-segitiga').innerText = `${keliling}`;
 });
 
+// Jajar Genjang
 document.getElementById('luas-jajar-genjang').addEventListener('submit', function(event) {
     event.preventDefault(); 
     const alas = parseFloat(document.getElementById('alasJajarGenjang').value);
@@ -44,4 +46,21 @@ document.getElementById('keliling-jajar-genjang').addEventListener('submit', fun
     const sisi2 = parseFloat(document.getElementById('sisi2').value);
     const keliling = 2 * (sisi1 + sisi2); 
     document.getElementById('keliling-jajarGenjang').innerText = `${keliling}`; 
+});
+
+// Persegi Panjang
+document.getElementById('luas-persegi-panjang').addEventListener('submit', function(event) {
+    event.preventDefault()
+    const panjang = parseFloat(document.getElementById('panjang').value);
+    const lebar = parseFloat(document.getElementById('lebar').value);
+    const luas = panjang * lebar;
+    document.getElementById('luasPersegiPanjang').innerText = `${luas}`;
+});
+
+document.getElementById('keliling-persegi-panjang').addEventListener('submit', function(event) {
+    event.preventDefault()
+    const p = parseFloat(document.getElementById('p').value);
+    const l = parseFloat(document.getElementById('l').value);
+    const keliling = 2 * (p + l);
+    document.getElementById('keliling-persegiPanjang').innerText = `${keliling}`;
 });

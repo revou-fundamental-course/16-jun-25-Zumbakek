@@ -137,6 +137,15 @@ button {
     background-image: url(https://image.popmama.com/post/20220402/l-jajargenjangjpg-1e4309e6131e2856d7f8f6b6a8a6b18f.jpg);
 }
 
+/* style Persegi Panjang */
+.img-luas-persegiPanjang {
+    background-image: url(https://i.pinimg.com/736x/14/b9/ea/14b9ea1e4c33eca125613d0a52a1bc8b.jpg);
+}
+
+.img-keliling-persegiPanjang {
+    background-image: url(https://i.pinimg.com/736x/14/b9/ea/14b9ea1e4c33eca125613d0a52a1bc8b.jpg);
+}
+
 .footer {
   text-align: center;
   font-size: 14px;
