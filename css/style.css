@@ -17,11 +17,9 @@ header{
 
 .main-header {
     text-align: center;
-    background-color: aqua;
     color: black;
     padding: 15px 0;
     width: 100%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
 }
 
 nav a {
@@ -65,7 +63,7 @@ main > section {
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
-    width: 100%;
+    width: 90%;
     transition: transform 0.2s ease;
 }
 
@@ -77,8 +75,6 @@ main > section {
     background-color:aquamarine;
     border: none;
     border-radius: 5px;
-    box-sizing: border-box;
-    background-position: center;
 }
 
 section > p {
@@ -172,6 +168,21 @@ button {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    nav {
+        flex-direction: column; 
+    }
+    main {
+        flex-direction: column; 
+    }
+    main > section {
+        margin: 10px 0; 
+    }
 }
 
 .footer {
